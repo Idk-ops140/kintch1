@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kintch Video Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login or Sign-up Form -->
+        <div id="auth-container">
+            <h1>Welcome to Kintch</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">Log In</button>
+            <button id="signup-btn">Sign Up</button>
+        </div>
+
+        <!-- User Channel -->
+        <div id="channel-container" style="display:none;">
+            <h2>Your Channel</h2>
+            <button id="logout-btn">Log Out</button>
+            <h3>Your Videos</h3>
+            <ul id="user-videos"></ul>
+            <button id="create-video-btn">Create New Video</button>
+            <h3>Trending Videos</h3>
+            <ul id="trending-videos"></ul>
+            <h3>Search Videos</h3>
+            <input type="text" id="search-input" placeholder="Search by keyword">
+            <button id="search-btn">Search</button>
+            <ul id="search-results"></ul>
+            <h3>Trending Channels</h3>
+            <ul id="trending-channels"></ul>
+        </div>
+
+        <!-- Video Creation Form -->
+        <div id="create-video-container" style="display:none;">
+            <h2>Create a New Video</h2>
+            <input type="text" id="video-title" placeholder="Video Title">
+            <textarea id="video-description" placeholder="Video Description"></textarea>
+            <input type="file" id="video-file">
+            <button id="submit-video-btn">Submit Video</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
